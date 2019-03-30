@@ -1,3 +1,5 @@
+@interface SBDockIconListView : UIViewController
+
 %hook SBDockView SBWallpaperEffecfView SBDockIconListView
 
 -(void)setBackgroundAlpha:(double)arg1{
@@ -5,4 +7,11 @@
 }
 -(BOOL) isHidden {
 return TRUE;
+
+NSDictionary *bundleDefaults = [[NSUserDefaults standardUserDefaults]
+persistantDomainForName:@"com.cloudftl.fudock"];
+
+id isEnabled = [bundleDefaults valueForKey:@"isEnabled"];
+if ([isEnabled isEqual:@0]) {
+}
 %end
