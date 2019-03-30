@@ -10,4 +10,11 @@
 	return _specifiers;
 }
 
+- (void)openGithub {
+	[[UIApplication sharedApplication]
+	openURL:[NSURL URLWithString:@"http://github.com/CloudFTL/fudock"]
+	options:@{}
+	completionHandler:nil];
+}
+
 @end
