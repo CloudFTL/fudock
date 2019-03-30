@@ -1,0 +1,10 @@
+Package: com.cloudftl.fudock
+Name: fudock
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: CloudFTL
+Author: CloudFTL
+Section: Tweaks
+Version: 0.0.1-3+debug
+Installed-Size: 132
